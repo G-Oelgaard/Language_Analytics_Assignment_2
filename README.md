@@ -30,15 +30,19 @@ The data was obtained through the language analytics course.
 - This folder should include all utility scripts used by the main script.
 
 ## ------ SCRIPT USAGE ------
-#### Arguments
+### Arguments
+
+**Required**
 Argument         | What it specifies / does
 ---------------- | -------------------------
 "-l" / --"label" | The name of the label you want to use the script on. Ie. "FAKE" or "REAL"
 
-**Required**
-- The script requires you to give the arguments "-l" / "--label": The name of the label you want to use the script on. Ie. "FAKE" or "REAL"
-
 **Optional**
+Argument         | What it specifies / does
+---------------- | -------------------------
+"-o" / "--output" | The filepath to the place you want to place the new .csv file in (without the output filename). If none is given the file will be outputted to the "out" folder.
+"-t" / "--top" | How many of the top named entities to be printed. Ex. if given 5, the top five most common entities will be printed in the terminal
+
 - The script can be given the argument "-o" / "--output": The filepath to the place you want to place the new .csv file in (without the output filename). If none is given the file will be outputted to the "out" folder.
 - The script can be given the argument "-t" / "--top": How many of the top named entities to be printed. Ex. if given 5, the top five most common entities will be printed in the terminal
 
