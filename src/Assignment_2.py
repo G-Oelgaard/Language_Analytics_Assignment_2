@@ -45,9 +45,12 @@ def label_split(data, label):
     return df_label
                             
 def output_data(df_label, output, label):
-    outpath = os.path.join(output,
-                           label+"_news_output.csv")
-    df_label.to_csv(outpath, index=False)
+    if output == None:
+         outpath = os.path.join("..", "out", label+"_news_output.csv")
+        df_label.to_csv(outpath, index=False)
+    else:
+        outpath = os.path.join(output, label+"_news_output.csv")
+        df_label.to_csv(outpath, index=False)
                             
 def entity_counter(top, label):
     if top == None:
@@ -60,7 +63,7 @@ def entity_counter(top, label):
 def parse_args():
     ap = argparse.ArgumentParser()
     ap.add_argument("-l", "--label", required = True, help="The user defined data")
-    ap.add_argument("-o", "--output", required = True, help="The user defined output folder")
+    ap.add_argument("-o", "--output", required = False, help="The user defined output folder")
     ap.add_argument("-t", "--top", required = False, help="User defined list of counted values")
     args = vars(ap.parse_args())
     return args
