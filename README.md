@@ -35,7 +35,7 @@ The data was obtained through the language analytics course.
 
 **Optional**
 - The script can be given the argument "-o" / "--output": The filepath to the place you want to place the new .csv file in (without the output filename). If none is given the file will be outputted to the "out" folder.
-- The script can be given the argument "-t" / "--top": How many of the top named entities to be printed. Ex. if give 5, the top five most common entities will be printed in the terminal
+- The script can be given the argument "-t" / "--top": How many of the top named entities to be printed. Ex. if given 5, the top five most common entities will be printed in the terminal
 
 ## ------ RESULTS ------
 The model achieves what it sets out to do. However, the structure of the script means that it will have to be run twice to get the new results for both the .csv for fake and real news.
