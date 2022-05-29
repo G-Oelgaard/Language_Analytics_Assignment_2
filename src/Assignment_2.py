@@ -14,7 +14,7 @@ entity_count = []
 
 # importing data
 def import_data():
-    filepath = os.path.join("..",
+    filepath = os.path.join("..", "in",
                             "fake_or_real_news.csv")
     data = pd.read_csv(filepath)
     del data["Unnamed: 0"]
