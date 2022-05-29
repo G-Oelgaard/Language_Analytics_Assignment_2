@@ -6,7 +6,7 @@ The script will:
 - Create a new .csv file with either the Real or fake news.
 - Append each articles polarity and named entities
 - Print the top X* named entities in the terminal. 
-   - Specified by the user
+   - '*' Specified by the user
 
 ## ------ METHODS ------
 
