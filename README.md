@@ -31,11 +31,11 @@ The data was obtained through the language analytics course.
 
 ## ------ SCRIPT USAGE ------
 **Required**
-- The model_creation.py script requires you to give the arguments "-l" / "--label" (The name of the label you want to use the script on. Ie. "FAKE" or "REAL" )
+- The script requires you to give the arguments "-l" / "--label": The name of the label you want to use the script on. Ie. "FAKE" or "REAL"
 
 **Optional**
-- The poster_prediction.py script requires you to give the argument "-o" / "--output" (The filepath to the place you want to place the folders in (without the output filename). If none is given the file will be outputted to the "out" folder.
-- The poster_prediction.py script requires you to give the argument "-t" / "--" (the name of the image plot file created by the script)
+- The script can be given the argument "-o" / "--output": The filepath to the place you want to place the new .csv file in (without the output filename). If none is given the file will be outputted to the "out" folder.
+- The script can be given the argument "-t" / "--top": How many of the top named entities to be printed. Ex. if give 5, the top five most common entities will be printed in the terminal
 
 ## ------ RESULTS ------
-The model achieves what it sets out to do. However, we might quickly run into problems if the script is used to find similar images in the eyes of a human. That is because while the histograms (in other words the color concentrations and values) of the images might be similar, what the images actually depict might not be. That is why finding similar images is probably better achieved using something like feature extraction and the nearest_neighbor function from sklearn.
+The model achieves what it sets out to do. However, the structure of the script means that it will have to be run twice to get the new results for both the .csv for fake and real news.
