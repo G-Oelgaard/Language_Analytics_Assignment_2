@@ -30,6 +30,11 @@ The data was obtained through the language analytics course.
 - This folder should include all utility scripts used by the main script.
 
 ## ------ SCRIPT USAGE ------
+#### Arguments
+Argument         | What it specifies / does
+---------------- | -------------------------
+"-l" / --"label" | The name of the label you want to use the script on. Ie. "FAKE" or "REAL"
+
 **Required**
 - The script requires you to give the arguments "-l" / "--label": The name of the label you want to use the script on. Ie. "FAKE" or "REAL"
 
