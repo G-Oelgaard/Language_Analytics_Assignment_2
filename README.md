@@ -8,9 +8,6 @@ The script will:
 - Print the top X* named entities in the terminal. 
    - '*' Specified by the user
 
-## ------ METHODS ------
-
-
 ## ------ DATA ------
 The data is a .csv file containing around 6335 fake and real news articles divided into the columns "title", "text" and "label".
 
